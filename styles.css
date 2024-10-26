@@ -1,0 +1,60 @@
+body {
+    background-color: #640D5F;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: #FFF0D1;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: minmax(100px, 200px) minmax(100px, 200px);
+    grid-template-rows: 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 40px;
+    place-content: center;
+    margin-top: 100px;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    border: 10px solid black;
+    border-radius: 30px;
+}
+
+
+
+#one {
+    background-color: #D91656;
+}
+
+#two {
+    background-color: #FFEB55;
+}
+
+#three {
+    background-color: #6499E9;
+}
+
+#four {
+    background-color: #EE66A6;
+}
+
+.press{
+    background-color: grey;
+    box-shadow: 0 0 20px white;
+}
+
+.game-over{
+    background-color: #C62E2E;
+}
+
+.design{
+    font-size: 45px;
+    color: #F95454;
+}
