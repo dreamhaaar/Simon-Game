@@ -95,6 +95,7 @@ p{
     font-family: monospace;
     font-size: 25px;
     color: black;
+    margin-top: -10px;
 }
 span{
     font-weight: bold;
@@ -115,14 +116,16 @@ footer{
     }
     .box{
         display: grid;
-        grid-template-columns: minmax(20px, 30px) minmax(20px, 30px);
+        grid-template-columns: min(80px, 120px) min(80px, 120px);
         grid-template-rows: 1fr 1fr;
-        row-gap: 20px;
-        column-gap: 205px;
+        row-gap: 10px;
+        column-gap: 60px;
         place-content: center;
     }
     .card{
         place-self: center;
+        width: 120px;
+        height: 120px;
     }
     .btn{
         margin-top: 20px;
@@ -131,7 +134,13 @@ footer{
         text-align: center;
     }
     .title{
-        font-size: 45px;
+        font-size: 25px;
+    }
+    p{
+        font-size: 13px;
+    }
+    h2{
+        font-size: 25px;
     }
 }
 
