@@ -1,33 +1,31 @@
 body {
-    background-color: #640D5F;
+    background-color: #ffc0cb;
+    font-family: 'Press Start 2P', cursive;
+    color: #C0FFF4;
 }
 
 h1 {
-    font-family: 'Press Start 2P', cursive;
-    color: #FFF0D1;
     font-size: 50px;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .box {
     display: grid;
-    grid-template-columns: minmax(100px, 200px) minmax(100px, 200px);
+    grid-template-columns: minmax(50px, 200px) minmax(50px, 200px);
     grid-template-rows: 1fr 1fr;
-    row-gap: 40px;
+    row-gap: 25px;
     column-gap: 40px;
     place-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .card {
     width: 200px;
     height: 200px;
-    border: 10px solid black;
+    border: 7px solid black;
     border-radius: 30px;
 }
-
-
 
 #one {
     background-color: #D91656;
@@ -45,16 +43,109 @@ h1 {
     background-color: #EE66A6;
 }
 
-.press{
+.press {
     background-color: grey;
     box-shadow: 0 0 20px white;
 }
 
-.game-over{
+.game-over {
     background-color: #C62E2E;
 }
 
-.design{
+.design {
     font-size: 45px;
     color: #F95454;
+}
+
+.btn {
+    margin-top: 25px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #FFEFEF;
+    border-width: 1px;
+    font-weight: 600;
+    font-family: monospace;
+   
+}
+
+.btn:hover {
+    background-color: #D0F3EC;
+    color: black;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    margin-top: 100px;
+}
+h2{
+    font-size: 45px;
+}
+p{
+    font-family: monospace;
+    font-size: 25px;
+    color: black;
+}
+span{
+    font-weight: bold;
+}
+footer{
+    margin-top: 20px;
+    color: black;
+    font-size: 12px;
+    text-align: end;
+}
+@media only screen and (max-width: 719px) {
+    body{
+        background-color: yellow;
+        margin: 0;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .box{
+        display: grid;
+        grid-template-columns: minmax(20px, 30px) minmax(20px, 30px);
+        grid-template-rows: 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 205px;
+        place-content: center;
+    }
+    .card{
+        place-self: center;
+    }
+    .btn{
+        margin-top: 20px;
+    }
+    .info{
+        text-align: center;
+    }
+    .title{
+        font-size: 45px;
+    }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1280px) {
+    body{
+        background-color: #D0F3EC;
+    }
+    .box{
+        row-gap: 20px;
+    }
+    .btn{
+        margin-top: 20px;
+    }
+    .title{
+        font-size: 45px;
+    }
 }

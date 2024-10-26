@@ -11,17 +11,30 @@
 </head>
 
 <body>
-    <h1 class="title">Press Any Key to Start</h1>
-    <div class="box">
-        <div type="button" class="card" id="one"></div>
-        <div type="button" class="card" id="two"></div>
-        <div type="button" class="card" id="three"></div>
-        <div type="button" class="card" id="four"></div>
+    <div class="container">
+        <h1 class="title">👾 Simon Game 👾</h1>
+        <div class="box">
+            <div type="button" class="card" id="one"></div>
+            <div type="button" class="card" id="two"></div>
+            <div type="button" class="card" id="three"></div>
+            <div type="button" class="card" id="four"></div>
+        </div>
+        <button class="btn">Play</button>
+
+        <div class="info">
+            <h2>How to Play?</h2>
+            <p>Upon starting the game, a random button will be pressed. You must memorize the order in which the buttons
+                are pressed each time a button is randomly selected.
+                <span>Memorize the sequence.</span>
+            </p>
+        </div>
+
     </div>
 
+    <footer>@NekkoSan 2024</Nav></footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="minified.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
